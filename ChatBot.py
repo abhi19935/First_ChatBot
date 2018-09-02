@@ -1,6 +1,7 @@
 from flask import Flask, request
 import json
 import requests
+import ChatBot_v2
 
 app = Flask(__name__)
 
