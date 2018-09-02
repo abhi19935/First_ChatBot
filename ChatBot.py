@@ -34,6 +34,7 @@ def messaging_events(payload):
   provided payload.
   """
   data = json.loads(payload)
+  print('the data is : %s' %(data))
   messaging_events = data["entry"][0]["messaging"]
   for event in messaging_events:
     if "message" in event and "text" in event["message"]:
